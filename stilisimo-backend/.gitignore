@@ -1,0 +1,28 @@
+# Binaries
+*.exe
+*.out
+*.o
+*.a
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+
+# Compiled Go code
+*.test
+*.prof
+
+# Testing
+*.test
+*.prof
+
+# Dependency directories
+vendor/
+
+# IDE files
+.vscode/
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+liteide/
