@@ -13,5 +13,40 @@
     }
   },
   "workspaceFolder": "/workspace/stilisimo-frontend",
-  "shutdownAction": "none"
+  "shutdownAction": "none",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "aaron-bond.better-comments",
+        "esbenp.prettier-vscode",
+        "vscjava.vscode-java-pack",
+        "sohibe.java-generate-setters-getters",
+        "redhat.fabric8-analytics",
+        "redhat.vscode-xml"
+      ],
+      "settings": {
+        "window.zoomLevel": 1,
+        "prettier.tabWidth": 2,
+        "terminal.integrated.detectLocale": "auto",
+        "files.autoGuessEncoding": true,
+        "explorer.autoReveal": true,
+        "editor.wordWrap": "on",
+        "terminal.integrated.fontFamily": "Cascadia Code PL",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true,
+        "editor.quickSuggestions": {
+          "other": "on",
+          "comments": "on",
+          "strings": "on"
+        },
+        "[xml]": {
+          "editor.defaultFormatter": "redhat.vscode-xml"
+        },
+        "[java]": {
+          "editor.defaultFormatter": "redhat.java"
+        }
+      }
+    }
+  }
 }
