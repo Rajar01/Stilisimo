@@ -1,0 +1,46 @@
+{
+  "name": "Stilisimo Backend Ubuntu",
+  "dockerComposeFile": "../docker-compose.yaml",
+  "service": "stilisimo-backend",
+  "features": {
+    "ghcr.io/devcontainers/features/go:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-contrib/features/mongosh-homebrew:1": {
+      "version": "latest"
+    }
+  },
+  "workspaceFolder": "/workspace/stilisimo-backend",
+  "shutdownAction": "none",
+  "customizations": {
+    "vscode": {
+      "extensions": ["aaron-bond.better-comments", "esbenp.prettier-vscode"],
+      "settings": {
+        "window.zoomLevel": 1,
+        "prettier.tabWidth": 2,
+        "terminal.integrated.detectLocale": "auto",
+        "files.autoGuessEncoding": true,
+        "explorer.autoReveal": true,
+        "editor.wordWrap": "on",
+        "terminal.integrated.fontFamily": "Cascadia Code PL",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true,
+        "editor.quickSuggestions": {
+          "other": "on",
+          "comments": "on",
+          "strings": "on"
+        },
+        "gopls": {
+          "ui.semanticTokens": true,
+          "formatting.gofumpt": true
+        },
+        "[go]": {
+          "editor.insertSpaces": true,
+          "editor.defaultFormatter": "golang.go",
+          "editor.formatOnSave": true
+        }
+      }
+    }
+  }
+}
