@@ -3,7 +3,7 @@ services:
   stilisimo-frontend:
     image: mcr.microsoft.com/devcontainers/base:dev-ubuntu22.04
     volumes:
-      - .:/workspace:cached
+      - ../:/workspace:cached
     command: sleep infinity
     links:
       - stilisimo-backend
